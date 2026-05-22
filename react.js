@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+
 const element=React.createElement("h2",{id:"toot", style:{color:"red", backgroundColor:"black", fontSize:"Arial"}},'hello kahan hai')
 const element2=React.createElement("h2",{id:"voot", style:{color:"red", backgroundColor:"black", fontSize:"Arial"}},'Yahan hai hum')
 const div=React.createElement("h2",{id:"loot", style:{color:"red", backgroundColor:"black", fontSize:"Arial"}},[element,element2])

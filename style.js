@@ -31,6 +31,7 @@ console.log("hello world ")
 
 // React: Object
 // ReactDOM: Object
+// react is a object which have functions to make our file 
 const React = {
     createElement: function(tag,styles,children){
         const element = document.createElement(tag);
@@ -78,4 +79,6 @@ const Ul = React.createElement('ul',{fontSize:"30px", backgroundColor:"blue", co
 ReactDOM.render(header1,document.getElementById('root'));
 ReactDOM.render(header2,document.getElementById('root'));
 ReactDOM.render(Ul,document.getElementById('root'));
+
+
 

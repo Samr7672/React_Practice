@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "\"React Practice\"",
+  "homepage": "https://github.com/Samr7672/React_Practice#readme",
+  "bugs": {
+    "url": "https://github.com/Samr7672/React_Practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samr7672/React_Practice.git"
+  },
+  "license": "ISC",
+  "author": "Priyanshu Kumar",
+  "type": "commonjs",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  }
+}

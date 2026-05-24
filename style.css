@@ -1,5 +1,6 @@
 #first{
-    background-color: black;
-    color:antiquewhite;
+    /* background-color: black;
+    color:antiquewhite; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 2px solid black;
 }

@@ -759,7 +759,7 @@ Reactroot.render(div); // Reactroot.render(element);
  // but using this will make our file slow because first the link in html file are read and thenn it will choose properties 
  // so we use Bundler
  // bundler utna hi code dega jitna tumko chahiye na jyada na kam 
- // bundler can be webpack, vite , Parcel
+ // bundler can be webpack, vite , Parcel and webpack
 
   $parcel$ReactRefreshHelpers$107e.postlude(module);
 } finally {

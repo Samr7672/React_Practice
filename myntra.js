@@ -49,6 +49,7 @@ function Header(){
     <div className="header" > 
       <img className="image" src="https://imgs.search.brave.com/DEotfZ1-jf7Apy1PL_pQMB5pkk7t7cq1S5WYagkpsZ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzA4/L015bnRyYS1Mb2dv/LTUwMHgyODEucG5n/" height="50px" width="10px"/>
       <div className="opions">
+        <button>Filters</button>
         <button>Home</button>
         <button>Shirt</button> 
         <button>Pant</button>

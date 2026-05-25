@@ -105,7 +105,7 @@ function App(){
 
     function sortPrice(){
       a.sort((a,b)=> a.price-b.price)
-      seta([...a])
+      seta([...a])// useState uses reference 
     }
 
     function sortDiscount(){

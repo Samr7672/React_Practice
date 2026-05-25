@@ -32,7 +32,7 @@ function Card(props){
         border: "1px solid #ddd",
         borderRadius: "8px",
       }} >
-            <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1772082793_7492758.jpg?w=1080&dpr=2" height="100px" width="100px"></img>
+            <img src="https://imgs.search.brave.com/DEotfZ1-jf7Apy1PL_pQMB5pkk7t7cq1S5WYagkpsZ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzA4/L015bnRyYS1Mb2dv/LTUwMHgyODEucG5n" height="100px" width="100px"/>
             <div justify-element="center">
                 <h1>{props.clothes}</h1>
                 <h2>{props.offer}</h2>
@@ -44,24 +44,59 @@ function Card(props){
     
 }
 
+function Header(){
+  return (
+    <div className="header" > 
+      <img className="image" src="https://imgs.search.brave.com/DEotfZ1-jf7Apy1PL_pQMB5pkk7t7cq1S5WYagkpsZ0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIyLzA4/L015bnRyYS1Mb2dv/LTUwMHgyODEucG5n/" height="50px" width="10px"/>
+      <div className="opions">
+        <button>Home</button>
+        <button>Shirt</button> 
+        <button>Pant</button>
+        <button>Kids Clothes</button> 
+        <button>Women`s Clothes</button>
+        <button>Shoes</button>
+      </div>
+      <input id="input" placeholder="Search Here For Clothes"></input>
+
+      <div className="middle">
+        <button>Profile</button>
+        <button>WishList</button>
+        <button>Bag</button>
+      </div>
+    </div>
+  )
+}
+
+function Footer(){
+
+  <img className="footer" src="https://cdn.dribbble.com/userupload/26652765/file/original-8a2c30e2f059368b2f63c16c6462e0db.jpg?resize=400x300&vertical=center"/>
+
+
+}
+
 const arr=[{clothes:"Shirt" ,offer:"20 to 30", price:"$20"}, {clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"},{clothes:"Shirt" ,offer:"20 to 30", price:"$20"}]
 
 function App(){
     return (
-      <div style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "20px",
-      }}>
-        {arr.map((value,index)=>(
-          <Card
-            key={index}
-            clothes={value.clothes}
-            offer={value.offer}
-            price={value.price}
-          />
-        ))}
-      </div>
+      <>
+        <Header/>
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "20px",
+          justifyContent:"center",
+        }}>
+          {arr.map((value,index)=>(
+            <Card
+              key={index}
+              clothes={value.clothes}
+              offer={value.offer}
+              price={value.price}
+            />
+          ))}
+        </div>
+        <Footer/>
+      </>
     )
 }
 root.render(<App />)
